@@ -6,7 +6,7 @@ A modern, interactive portfolio website showcasing my work as a Full-Stack Devel
 
 ## 🚀 Live Demo
 
-🔗 https://your-portfolio-link.vercel.app/
+🔗 https://portfolio-2tkm.vercel.app/
 
 ---
 
@@ -105,7 +105,7 @@ npm run dev
 
 ### 🛒 E-Commerce Clone
 - Frontend shopping UI  
-- Tech: HTML, CSS, JS  
+- Tech: HTML, CSS, JS, React 
 - 🔗 Live: https://e-commerce-clone-j1kv.vercel.app/  
 - 💻 Code: https://github.com/Lalitmehra9720/E-Commerce-clone.git  
 
@@ -114,6 +114,14 @@ npm run dev
 ### 📝 Note Harbor
 - Notes management app  
 - Tech: MERN Stack  
+- 💻 Code: https://github.com/Lalitmehra9720/NoteHarbor.git  
+
+---
+
+### 📝 Portfolio website
+- personal portfolio website   
+- Tech: React, Framer-motion 
+- 🔗 Live: https://portfolio-2tkm.vercel.app/
 - 💻 Code: https://github.com/Lalitmehra9720/NoteHarbor.git  
 
 ---
@@ -138,7 +146,7 @@ npm run dev
 ## 📧 Contact
 
 👤 **Lalit Mehra**  
-📧 Email: your-email@example.com  
+📧 Email: lalitmehra1255@gmail.com  
 🔗 LinkedIn: https://www.linkedin.com/in/lalit-mehra-8a798228a/  
 💻 GitHub: https://github.com/Lalitmehra9720  
 

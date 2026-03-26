@@ -74,7 +74,7 @@ const projects = [
       "A modern portfolio website to showcase my projects and skills.",
     image: portfolio,
     tags: ["React", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "https://your-portfolio.vercel.app/",
+    demoUrl: "https://portfolio-2tkm.vercel.app/",
     githubUrl: "https://github.com/Lalitmehra9720/Portfolio.git",
     accent: "#81f9eb",
     accentLight: "#1bdff5",
