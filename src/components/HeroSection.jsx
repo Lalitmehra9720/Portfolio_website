@@ -64,9 +64,9 @@ const PARTICLES = Array.from({ length: 22 }, (_, i) => ({
    SOCIAL LINKS
 ───────────────────────────────────────────── */
 const SOCIALS = [
-  { icon: Github,   href: "https://github.com/Shagun0622",          label: "GitHub"   },
-  { icon: Linkedin, href: "https://linkedin.com/in/shagun-kumari",  label: "LinkedIn" },
-  { icon: Mail,     href: "mailto:shagun@example.com",              label: "Email"    },
+  { icon: Github,   href: "https://github.com/Lalitmehra9720", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/lalit-mehra-8a798228a/", label: "LinkedIn" },
+  { icon: Mail,     href: "mailto:lalitmehra1255@gmail.com", label: "Email" },
 ];
 
 /* ─────────────────────────────────────────────
@@ -139,7 +139,7 @@ export const HeroSection = () => {
                 WebkitTextFillColor:  "transparent",
               }}
             >
-              Shagun Kumari
+              Lalit Mehra
             </span>
           </h1>
 

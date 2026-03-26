@@ -16,20 +16,20 @@ export const Home = () => {
       id="home"
       className="relative min-h-screen bg-background text-foreground overflow-x-hidden"
     >
-      {/* 🌌 Background */}
+      {/*  Background */}
       <StarBackground />
 
-      {/* 🧭 UI */}
+      {/*  UI */}
       <div className="relative z-20">
         <Navbar />
 
-        {/* 🌗 Theme Toggle */}
+        {/*  Theme Toggle */}
         <div className="fixed top-4 right-4 z-50">
           <ThemeToggle />
         </div>
       </div>
 
-      {/* 📄 Content */}
+      {/*  Content */}
       <main className="relative z-10 pt-20">
         <HeroSection />
         <AboutSection />

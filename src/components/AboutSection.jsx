@@ -31,7 +31,7 @@ const cards = [
   {
     icon:    Code,
     label:   "Frontend Development",
-    body:    "Building responsive, animated UIs with React, Tailwind CSS, and modern JavaScript.",
+    body:    "Building modern, responsive, and interactive UIs using React, Tailwind CSS, and JavaScript.",
     accent:  "#818cf8",
     dim:     "#818cf818",
     symbol:  "◈",
@@ -39,7 +39,7 @@ const cards = [
   {
     icon:    User,
     label:   "Backend Development",
-    body:    "Crafting REST APIs, handling auth, and working with databases via Node.js & Express.",
+    body:    "Developing REST APIs, authentication systems, and working with databases using Node.js & Express.",
     accent:  "#22d3ee",
     dim:     "#22d3ee18",
     symbol:  "⬡",
@@ -47,7 +47,7 @@ const cards = [
   {
     icon:    Briefcase,
     label:   "DSA & Problem Solving",
-    body:    "Solving algorithmic challenges to sharpen logic, efficiency, and scalable thinking.",
+    body:    "Practicing Data Structures & Algorithms regularly to improve logic, efficiency, and scalability.",
     accent:  "#a78bfa",
     dim:     "#a78bfa18",
     symbol:  "⋈",
@@ -78,20 +78,17 @@ const AboutCard = ({ card }) => {
         background:  `linear-gradient(135deg, ${card.dim}, transparent)`,
       }}
     >
-      {/* Left accent bar */}
       <div
         className="absolute left-0 top-4 bottom-4 w-0.5 rounded-full transition-all duration-300 group-hover:top-2 group-hover:bottom-2"
         style={{ background: `linear-gradient(to bottom, ${card.accent}, transparent)` }}
       />
 
       <div className="flex items-start gap-4 pl-3">
-        {/* Icon orb */}
         <div
           className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
           style={{
             background: card.dim,
             border:     `1px solid ${card.accent}40`,
-            boxShadow:  `0 0 0 0 ${card.accent}`,
           }}
         >
           <Icon className="h-5 w-5" style={{ color: card.accent }} />
@@ -108,7 +105,6 @@ const AboutCard = ({ card }) => {
         </div>
       </div>
 
-      {/* Hover glow */}
       <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
         style={{ boxShadow: `inset 0 0 20px ${card.accent}10` }}
@@ -124,12 +120,10 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative overflow-hidden">
 
-      {/* Subtle top gradient */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
 
       <div className="container mx-auto max-w-5xl">
 
-        {/* ── Heading ── */}
         <motion.div
           className="text-center mb-16"
           variants={fadeUp}
@@ -145,7 +139,6 @@ export const AboutSection = () => {
             About <span className="text-primary">Me</span>
           </h2>
 
-          {/* Animated divider */}
           <motion.div
             className="mx-auto h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
             initial={{ width: 0, opacity: 0 }}
@@ -157,7 +150,6 @@ export const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
 
-          {/* ── LEFT — Bio + Stats + Buttons ── */}
           <motion.div
             className="space-y-7"
             variants={fadeLeft}
@@ -166,28 +158,22 @@ export const AboutSection = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold leading-snug">
-              Fresher Full-Stack Developer{" "}
+              MERN Stack Developer{" "}
               <span className="text-primary">&</span> Problem Solver
             </h3>
 
             <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with a strong foundation in
-                both frontend and backend development — building responsive,
-                user-friendly web applications from the ground up.
+                I'm Lalit Mehra, a passionate MERN stack developer focused on building modern, responsive, and user-friendly web applications.
               </p>
               <p>
-                Alongside development, I actively practice Data Structures &
-                Algorithms to write clean, efficient, and scalable code that holds
-                up under real-world conditions.
+                I specialize in React, Node.js, and Tailwind CSS, creating clean UI and scalable backend systems.
               </p>
               <p>
-                Currently deepening my backend knowledge and sharpening logic
-                through consistent DSA practice every day.
+                Alongside development, I actively practice Data Structures & Algorithms to improve problem-solving and write efficient code.
               </p>
             </div>
 
-            {/* Stats row */}
             <div className="flex gap-6 pt-2">
               {stats.map((s) => (
                 <div key={s.label} className="flex flex-col items-center gap-0.5">
@@ -208,10 +194,8 @@ export const AboutSection = () => {
               ))}
             </div>
 
-            {/* Divider */}
             <div className="h-px bg-border/50 w-full" />
 
-            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
               <motion.a
                 href="#contact"
@@ -223,7 +207,7 @@ export const AboutSection = () => {
               </motion.a>
 
               <motion.a
-                href="/Shagun_Kumari_Resume.pdf"
+                href="/Lalit_Mehra_Resume.pdf"
                 download
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}
@@ -234,7 +218,6 @@ export const AboutSection = () => {
             </div>
           </motion.div>
 
-          {/* ── RIGHT — Cards ── */}
           <motion.div
             className="flex flex-col gap-4"
             variants={stagger}

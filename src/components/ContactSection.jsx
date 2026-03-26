@@ -1,5 +1,5 @@
 import {
-  Linkedin, Github, Mail, Phone, MapPin, Send, Sparkles,
+  Linkedin, Github, Mail, Phone, MapPin, Send, Sparkles,Code
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -27,21 +27,21 @@ const INFO_ITEMS = [
   {
     icon:   Mail,
     title:  "Email",
-    value:  "shagun.kumari.work@gmail.com",
-    href:   "mailto:shagun.kumari.work@gmail.com",
+    value:  "lalitmehra1255@gmail.com",
+    href:   "mailto:lalitmehra1255@gmail.com",
     accent: "#818cf8",
   },
   {
     icon:   Phone,
     title:  "Phone",
-    value:  "+91 8873924902",
-    href:   "tel:+918873924902",
+    value:  "+91 7819961255",
+    href:   "tel:+7819961255",
     accent: "#a78bfa",
   },
   {
     icon:   MapPin,
     title:  "Location",
-    value:  "Pune, Maharashtra, India",
+    value:  "Ranikhet, Uttarakhand, India",
     accent: "#22d3ee",
   },
 ];
@@ -50,31 +50,33 @@ const INFO_ITEMS = [
    SOCIAL LINKS
 ───────────────────────────────────────────── */
 const SOCIALS = [
+
   {
-    href:   "https://www.linkedin.com/in/shagun-kumari-21066b318/",
+    href:   "https://www.linkedin.com/in/lalit-mehra-8a798228a/",
     label:  "LinkedIn",
     accent: "#818cf8",
     icon:   <Linkedin size={18} />,
   },
   {
-    href:   "https://github.com/Shagun0622",
+    href:   "https://github.com/Lalitmehra9720",
     label:  "GitHub",
     accent: "#a78bfa",
     icon:   <Github size={18} />,
   },
   {
-    href:   "https://leetcode.com/u/kumarishagun330/",
-    label:  "LeetCode",
+    href:   "https://www.geeksforgeeks.org/user/lalitmehk23g/",
+    label:  "GeekForGeeks",
     accent: "#22d3ee",
-    icon:   (
-      <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] fill-current" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.483 0L3.99 9.494a3.403 3.403 0 000 4.811l5.705 5.705a3.403 3.403 0 004.811 0l9.494-9.494-2.42-2.42-8.362 8.362a1.72 1.72 0 01-2.432 0l-5.706-5.706a1.72 1.72 0 010-2.432l8.363-8.362L13.483 0z"/>
-        <path d="M18.004 3.996l-1.999 1.999 2.42 2.42 1.999-1.999-2.42-2.42z"/>
-      </svg>
-    ),
+    // icon:   (
+    //   <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] fill-current" xmlns="http://www.w3.org/2000/svg">
+    //     <path d="M13.483 0L3.99 9.494a3.403 3.403 0 000 4.811l5.705 5.705a3.403 3.403 0 004.811 0l9.494-9.494-2.42-2.42-8.362 8.362a1.72 1.72 0 01-2.432 0l-5.706-5.706a1.72 1.72 0 010-2.432l8.363-8.362L13.483 0z"/>
+    //     <path d="M18.004 3.996l-1.999 1.999 2.42 2.42 1.999-1.999-2.42-2.42z"/>
+    //   </svg>
+    // ),
+    icon:   <Code size={18} />,
   },
   {
-    href:   "mailto:shagun.kumari.work@gmail.com",
+    href:   "mailto:lalitmehra1255@gmail.com",
     label:  "Email",
     accent: "#c084fc",
     icon:   <Mail size={18} />,
@@ -318,7 +320,7 @@ export const ContactSection = () => {
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-5">
-              <Field name="name"    label="Your Name"    placeholder="Shagun Kumari"         />
+              <Field name="name"    label="Your Name"    placeholder="Lalit Mehra"         />
               <Field name="email"   label="Your Email"   placeholder="you@email.com" type="email" />
               <input type="hidden"  name="title"         value="Portfolio Contact" />
               <Field name="message" label="Your Message" placeholder="Hello, I'd like to talk about..." multiline />

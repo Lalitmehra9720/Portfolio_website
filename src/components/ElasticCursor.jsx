@@ -4,14 +4,17 @@ export const ElasticCursor = () => {
   const cursorRef = useRef(null);
 
   useEffect(() => {
+    if (window.innerWidth < 768) return; //  disable on mobile
+
     const cursor = cursorRef.current;
+    if (!cursor) return;
 
     let mouseX = 0;
     let mouseY = 0;
     let currentX = 0;
     let currentY = 0;
 
-    const speed = 0.12; // ⬅️ smaller = more delay (premium feel)
+    const speed = 0.12;
 
     const moveCursor = () => {
       currentX += (mouseX - currentX) * speed;

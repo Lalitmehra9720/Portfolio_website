@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 
 /* ===== IMPORT IMAGES ===== */
-import stayeaseCover      from "../assets/projects/stayease_cover.png";
+import sky_cast from "../assets/projects/sky-cast.png";
 import davsasLandingCover from "../assets/projects/davsas_cover.png";
-import sundownCover       from "../assets/projects/sundown_cover.png";
-import gta6Cover          from "../assets/projects/gta6_cover.png";
+import note_harbor from "../assets/projects/note-harbor.png";
+import e_commerce from "../assets/projects/e-commerce.png";
+import portfolio from "../assets/projects/portfolio.png";
+
 
 /* ─────────────────────────────────────────────
    PROJECT DATA
@@ -15,55 +17,68 @@ import gta6Cover          from "../assets/projects/gta6_cover.png";
 const projects = [
   {
     id: 1,
-    title: "Stayease",
+    title: "Authentication System",
     description:
-      "A modern accommodation booking platform with clean UI, smooth interactions, and fully responsive design. Features property listings, search filters, and secure authentication.",
-    image: stayeaseCover,
-    tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Authentication"],
-    demoUrl: "https://stayease-5giw.onrender.com/",
-    githubUrl: "https://github.com/Shagun0622/stayease",
-    accent:      "#818cf8", // indigo-400  — dark mode
-    accentLight: "#4f46e5", // indigo-600  — light mode
+      "A full-stack authentication system with login, signup, and secure user handling using MERN stack.",
+    image: davsasLandingCover ,
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Authentication"],
+    demoUrl: "https://atg-proj.vercel.app/",
+    githubUrl: "https://github.com/Lalitmehra9720/ATG_Proj.git",
+    accent: "#818cf8",
+    accentLight: "#4f46e5",
     number: "01",
   },
   {
     id: 2,
-    title: "Davsas Landing",
+    title: "SkyCast Weather App",
     description:
-      "A sleek, conversion-focused landing page for Davsas — built with pixel-perfect attention to layout, typography, and responsive behaviour across all screen sizes.",
-    image: davsasLandingCover,
-    tags: ["React", "Tailwind CSS", "Framer Motion", "Responsive Design"],
-    demoUrl: "https://saas-landing-dashboard-ruddy.vercel.app/",
-    githubUrl: "https://github.com/Shagun0622/saas-landing-dashboard.git",
-    accent:      "#a78bfa", // violet-400
-    accentLight: "#7c3aed", // violet-600
+      "A modern weather forecasting app that provides real-time weather data with clean UI and responsive design.",
+    image: sky_cast,
+    tags: ["React", "API", "JavaScript", "CSS"],
+    demoUrl: "https://sky-cast-swart-chi.vercel.app/",
+    githubUrl: "https://github.com/Lalitmehra9720/SkyCast.git",
+    accent: "#22d3ee",
+    accentLight: "#0891b2",
     number: "02",
   },
   {
     id: 3,
-    title: "Sundown Studio – UI Clone",
+    title: "E-Commerce Clone",
     description:
-      "A pixel-perfect UI clone of Sundown Studio focusing on smooth GSAP animations, locomotive scroll, modern layout, and an immersive user experience.",
-    image: sundownCover,
-    tags: ["HTML", "CSS", "JavaScript", "GSAP", "Locomotive Scroll"],
-    demoUrl: "https://sundown-studio-clonee.netlify.app/",
-    githubUrl: "https://github.com/Shagun0622/sundown-studio-clone",
-    accent:      "#22d3ee", // cyan-400
-    accentLight: "#0891b2", // cyan-600
+      "A frontend e-commerce website with product listing, UI interactions, and responsive design.",
+    image: e_commerce,
+    tags: ["HTML", "CSS", "JavaScript"],
+    demoUrl: "https://e-commerce-clone-j1kv.vercel.app/",
+    githubUrl: "https://github.com/Lalitmehra9720/E-Commerce-clone.git",
+    accent: "#a78bfa",
+    accentLight: "#7c3aed",
     number: "03",
   },
   {
     id: 4,
-    title: "GTA 6 Landing Page",
+    title: "Note Harbor",
     description:
-      "A cinematic, fan-made landing page inspired by GTA VI — featuring bold typography, immersive hero visuals, parallax effects, and a dark atmospheric design.",
-    image: gta6Cover,
-    tags: ["HTML", "CSS", "JavaScript", "GSAP", "Parallax"],
-    demoUrl: "https://gta-6-landing-page-ten.vercel.app/",
-    githubUrl: "https://github.com/Shagun0622/GTA6_LANDING_PAGE.git",
-    accent:      "#f472b6", // pink-400
-    accentLight: "#db2777", // pink-600
+      "A notes management application where users can create, edit, and manage notes efficiently.",
+    image: note_harbor,
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/Lalitmehra9720/NoteHarbor.git",
+    accent: "#f472b6",
+    accentLight: "#db2777",
     number: "04",
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    description:
+      "A modern portfolio website to showcase my projects and skills.",
+    image: portfolio,
+    tags: ["React", "Tailwind CSS", "Framer Motion"],
+    demoUrl: "https://your-portfolio.vercel.app/",
+    githubUrl: "https://github.com/Lalitmehra9720/Portfolio.git",
+    accent: "#81f9eb",
+    accentLight: "#1bdff5",
+    number: "05",
   },
 ];
 
@@ -332,7 +347,7 @@ export const ProjectsSection = () => {
         >
           More on{" "}
           <a
-            href="https://github.com/Shagun0622"
+            href="https://github.com/Lalitmehra9720"
             target="_blank"
             rel="noreferrer"
             className="text-lg font-medium text-indigo-800 dark:text-primary underline underline-offset-8 hover:opacity-75 transition"

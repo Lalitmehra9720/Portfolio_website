@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { 
-  Code2, 
-  Palette, 
-  Zap, 
-  Wind, 
-  Server, 
-  Database, 
-  Binary, 
-  Cpu, 
-  FileCode, 
-  GitBranch, 
-  Terminal 
+import {
+  Code2,
+  Palette,
+  Zap,
+  Wind,
+  Server,
+  Database,
+  Binary,
+  Cpu,
+  FileCode,
+  GitBranch,
+  Terminal,
 } from "lucide-react";
 
 /* ================= SKILLS DATA ================= */
@@ -31,11 +31,11 @@ const skills = [
   // DSA
   { name: "Data Structures", category: "dsa", level: 82, icon: Binary },
   { name: "Algorithms", category: "dsa", level: 80, icon: Cpu },
-  
+
   // Languages
-  { name: "C", category: "languages", level: 85, icon: FileCode },
-  { name: "C++", category: "languages", level: 88, icon: FileCode },
-  { name: "Java", category: "languages", level: 83, icon: FileCode },
+
+  { name: "Java", category: "languages", level: 86, icon: FileCode },
+  { name: "C++", category: "languages", level: 80, icon: FileCode },
 
   // Tools
   { name: "Git & GitHub", category: "tools", level: 90, icon: GitBranch },
@@ -46,10 +46,10 @@ const skills = [
 
 const categories = [
   "all",
-  "languages",
   "frontend",
   "backend",
   "dsa",
+  "languages",
   "tools",
 ];
 
@@ -59,8 +59,7 @@ export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills = skills.filter(
-    (skill) =>
-      activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
 
   return (
@@ -71,11 +70,12 @@ export const SkillsSection = () => {
       <div className="container mx-auto max-w-6xl">
         {/* ===== HEADING ===== */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            My Skills
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            My <span className="text-primary">Skills</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Technologies and tools I work with
+            Technologies and tools I use to build scalable full-stack
+            applications
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export const SkillsSection = () => {
                 "px-6 py-2.5 rounded-full font-medium transition-all duration-300 border-2",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/25 scale-105"
-                  : "bg-background border-border text-foreground hover:border-primary/50 hover:bg-secondary/50"
+                  : "bg-background border-border text-foreground hover:border-primary/50 hover:bg-secondary/50",
               )}
             >
               {category === "all"
@@ -131,7 +131,9 @@ export const SkillsSection = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-muted-foreground">Proficiency</span>
-                    <span className="font-medium text-primary">{skill.level}%</span>
+                    <span className="font-medium text-primary">
+                      {skill.level}%
+                    </span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
                     <div
