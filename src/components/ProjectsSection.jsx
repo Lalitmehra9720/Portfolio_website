@@ -17,6 +17,19 @@ import portfolio from "../assets/projects/portfolio.png";
 const projects = [
   {
     id: 1,
+    title: "Note Harbor",
+    description:
+      "A notes management application where users can create, edit, and manage notes efficiently.",
+    image: note_harbor,
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://note-harbor-83hu.vercel.app/",
+    githubUrl: "https://github.com/Lalitmehra9720/NoteHarbor.git",
+    accent: "#f472b6",
+    accentLight: "#db2777",
+    number: "04",
+  },
+  {
+    id: 2,
     title: "Authentication System",
     description:
       "A full-stack authentication system with login, signup, and secure user handling using MERN stack.",
@@ -29,7 +42,7 @@ const projects = [
     number: "01",
   },
   {
-    id: 2,
+    id: 3,
     title: "SkyCast Weather App",
     description:
       "A modern weather forecasting app that provides real-time weather data with clean UI and responsive design.",
@@ -42,7 +55,7 @@ const projects = [
     number: "02",
   },
   {
-    id: 3,
+    id: 4,
     title: "E-Commerce Clone",
     description:
       "A frontend e-commerce website with product listing, UI interactions, and responsive design.",
@@ -54,19 +67,7 @@ const projects = [
     accentLight: "#7c3aed",
     number: "03",
   },
-  {
-    id: 4,
-    title: "Note Harbor",
-    description:
-      "A notes management application where users can create, edit, and manage notes efficiently.",
-    image: note_harbor,
-    tags: ["React", "Node.js", "MongoDB"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/Lalitmehra9720/NoteHarbor.git",
-    accent: "#f472b6",
-    accentLight: "#db2777",
-    number: "04",
-  },
+  
   {
     id: 5,
     title: "Portfolio Website",
@@ -150,7 +151,7 @@ const ProjectCard = ({ project, index, visible }) => {
 
           {/* Scrim — lighter in light mode */}
           <div className="absolute inset-0
-            bg-gradient-to-t
+            bg-linear-to-t
             from-white/60 dark:from-black/60
             via-transparent to-transparent"
           />
@@ -321,7 +322,7 @@ export const ProjectsSection = () => {
           {/* Animated divider */}
           <div
             className={`mx-auto mt-6 h-px transition-all duration-1000 ease-out
-              bg-gradient-to-r from-transparent via-indigo-400/60 dark:via-primary/40 to-transparent
+              bg-linear-to-r from-transparent via-indigo-400/60 dark:via-primary/40 to-transparent
               ${visible ? "w-40 opacity-100" : "w-0 opacity-0"}`}
             style={{ transitionDelay: "200ms" }}
           />
