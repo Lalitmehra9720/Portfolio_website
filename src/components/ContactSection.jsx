@@ -67,12 +67,6 @@ const SOCIALS = [
     href:   "https://www.geeksforgeeks.org/user/lalitmehk23g/",
     label:  "GeekForGeeks",
     accent: "#22d3ee",
-    // icon:   (
-    //   <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] fill-current" xmlns="http://www.w3.org/2000/svg">
-    //     <path d="M13.483 0L3.99 9.494a3.403 3.403 0 000 4.811l5.705 5.705a3.403 3.403 0 004.811 0l9.494-9.494-2.42-2.42-8.362 8.362a1.72 1.72 0 01-2.432 0l-5.706-5.706a1.72 1.72 0 010-2.432l8.363-8.362L13.483 0z"/>
-    //     <path d="M18.004 3.996l-1.999 1.999 2.42 2.42 1.999-1.999-2.42-2.42z"/>
-    //   </svg>
-    // ),
     icon:   <Code size={18} />,
   },
   {
@@ -259,7 +253,7 @@ export const ContactSection = () => {
           </p>
 
           <motion.div
-            className="mx-auto mt-5 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
+            className="mx-auto mt-5 h-px bg-linear-to-r from-transparent via-primary/40 to-transparent"
             initial={{ width: 0, opacity: 0 }}
             whileInView={{ width: 120, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}

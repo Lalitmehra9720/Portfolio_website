@@ -7,6 +7,7 @@ import davsasLandingCover from "../assets/projects/davsas_cover.png";
 import note_harbor from "../assets/projects/note-harbor.png";
 import e_commerce from "../assets/projects/e-commerce.png";
 import portfolio from "../assets/projects/portfolio.png";
+import laundary_management from "../assets/projects/laundary_management.png";
 
 
 /* ─────────────────────────────────────────────
@@ -30,6 +31,19 @@ const projects = [
   },
   {
     id: 2,
+    title: "Cleanpress - Laundary Management System",
+    description:
+      "CleanPress is a full-stack laundry management application that digitizes laundry business operations by providing customer management, order processing, status tracking, and billing features in a centralized platform.",
+    image: laundary_management,
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://laundary-management-system-ixpf.vercel.app/",
+    githubUrl: "https://github.com/Lalitmehra9720/Laundary-management-System",
+    accent: "#72f472",
+    accentLight: "#316e0d",
+    number: "04",
+  },
+  {
+    id: 3,
     title: "Authentication System",
     description:
       "A full-stack authentication system with login, signup, and secure user handling using MERN stack.",
@@ -42,7 +56,7 @@ const projects = [
     number: "01",
   },
   {
-    id: 3,
+    id: 4,
     title: "SkyCast Weather App",
     description:
       "A modern weather forecasting app that provides real-time weather data with clean UI and responsive design.",
@@ -55,7 +69,7 @@ const projects = [
     number: "02",
   },
   {
-    id: 4,
+    id: 5,
     title: "E-Commerce Clone",
     description:
       "A frontend e-commerce website with product listing, UI interactions, and responsive design.",
@@ -69,7 +83,7 @@ const projects = [
   },
   
   {
-    id: 5,
+    id: 6,
     title: "Portfolio Website",
     description:
       "A modern portfolio website to showcase my projects and skills.",
