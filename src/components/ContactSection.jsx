@@ -41,7 +41,7 @@ const INFO_ITEMS = [
   {
     icon:   MapPin,
     title:  "Location",
-    value:  "Ranikhet, Uttarakhand, India",
+    value:  "Noida, India",
     accent: "#22d3ee",
   },
 ];
